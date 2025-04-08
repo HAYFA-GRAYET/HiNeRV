@@ -16,9 +16,9 @@ parser = argparse.ArgumentParser()
 group = parser.add_argument_group('Script parameters')
 group.add_argument('--model', default='HiNeRV', type=str, help='Model to build, e.g. HiNeRV.')
 
-group.add_argument('--epochs', type=int, default=300, help='Number of epochs.')
-group.add_argument('--eval-epochs', type=int, default=30, help='Number of epochs for every evaluation.')
-group.add_argument('--log-epochs', type=int, default=30, help='Number of epochs for every output logging.')
+group.add_argument('--epochs', type=int, default=20, help='Number of epochs.')
+group.add_argument('--eval-epochs', type=int, default=10, help='Number of epochs for every evaluation.')
+group.add_argument('--log-epochs', type=int, default=10, help='Number of epochs for every output logging.')
 
 group.add_argument('--prune-epochs', default=0, type=int, help='Number of epochs with pruning.')
 group.add_argument('--prune-warmup-epochs', default=0, type=int, help='Number of warmup epochs with pruning.')
